@@ -1,38 +1,414 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Header{
+  height: 51px;
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  padding-left: 188px;
+  padding-right: 188px;
+  margin-top: 10px;
+  border-bottom: 1px solid rgb(228, 221, 221);
+   position: sticky;
+   top: 0px;
+   background-color: white;
+   z-index: 1;
+
+}
+
+
+.dropdown {
+  display: flex;
+  list-style: none;
+  width: 406px;
+  margin-left: 253px;
+  padding-left: 1px;
+  margin-top: -10px;
+  margin-right: 288px;
+}
+.dropdown > li{
+  margin: 20px;
+  font-size: 16px;
+}
+.dropdown-content {
+  display: inline-block;
+  position: absolute;
+  list-style: none;   
+  margin-top: 26px;
+  margin-left: -207px;
+
+
+  
+  
+    margin-top: 30px;
+    background-color: white;
+  
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    
+    
+  padding: 0px;
+  z-index: 1;
+
+}
+.dropdown-content li {
+  width: 100%;
+    height: 100%;
+    padding: 10px 10px;
+
+}
+.dropdown li:hover {
+    
+  color: rgb(82, 179, 181);
+}
+
+.dropdown-content>li:hover {
+    
+  background-color: #F6F8F8;
+}
+
+
+.dropdown-content-none {
+
+  display: none;
+
+}
+.Logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  margin-top: 53px;
+}
+.divLogo h1{
+  text-align: center;
+  color: rgb(24, 179, 155);
+  font-size: xx-large;
+  font-family: 'Roboto', sans-serif;
+} 
+.divPparagraphe{
+  display: flex;
+  margin-left: 186px;
+  margin-right: 184px;
+}
+.paragraphe{
+  height: 112px;
+  width: 478px;
+  line-height: 27px;
+    color: rgb(161, 116, 116);
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.forPatientDoctor{
+  height: 380px;
+  width: 479px;
+  border-radius: 10px;
+}
+.divForPatientDoctor{
+display: flex;
+justify-content: space-between;
+margin-left: 186px;
+margin-right: 184px;
+margin-top: 50px;
+}
+.forPatientDoctor h5{
+  color: rgb(179, 240, 228);
+  font-size: 14px;
+  padding-left: 39px;
+  font-family: 'Roboto', sans-serif;
+
+}
+.forPatientDoctor p{
+color: white;
+font-size: 26px;
+padding-left: 39px;
+padding-right: 77px;
+font-family: 'Roboto', sans-serif;
+line-height: 33.8px;
+
+}
+.forPatientDoctor img{
+  height: 221px;
+  position: absolute;
+   clip: rect(0px,252px,200px,0px);
+   margin-left: 227px;
+  }
+  .forPatientDoctor select{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    height: 44px;
+    width: 178px;
+    font-family: 'Roboto', sans-serif;    
+    margin-left: 40px;
+    }
+    .paragZnany{
+      display: flex;
+     width: 80%;
+     justify-content: space-around;
+     margin-left: 136px;
+     margin-top: 29px;
+  }
+  .weAre{
+    width: 25%;
+    height: 170px;
+    font-size:26px ;
+    line-height: 33px;
+    color: rgb(107, 185, 158);
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+   
+   .divZnany{
+    position: relative;
+    width: 651px;
+    
+}
+.znany{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    text-decoration: none;
+    position: absolute;
+    width: 125%;
+    flex-wrap: wrap;
+    top: 0px;
+}
+.znany li {
+  padding-right: 23px;
+  padding-bottom: 20px;
+  color:rgb(238, 227, 227);
+}
+.weAre p{
+  padding-top: 12px;
+  margin-top: 0px;
+  padding-left: 29px;
+  width: 200px;
+}
+
+.znany a{
+ 
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  padding: 16px;
+  color: rgb(197, 193, 193);
+}
+.znany li{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.znany a:hover{
+  color: rgb(107, 185, 158); ;
+}
+.divSection3{
+  height: 600px;
+width: 100%;
+background-color: rgb(219, 247, 246);
+display: flex;
+}
+.theWorldDiv{
+  padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.theWorldDiv h2{
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 44px;
+  color: rgb(0, 179, 155);
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  
+    margin-top: 73px;
+    margin-left: 185px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.theWorldDiv p{
+  
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #847489;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-top: 53px;
+    margin-left: 185px;
+    width: 427px;
+    font-family: 'Roboto', sans-serif;
+}
+.theWorldDiv img{
+  height: 320px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  padding-top: 5px;
+}
+.leaderBigDiv{
+  display: flex;
+  margin-left: 66px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+  margin-bottom: 22px;
+
+}
+.leaderDiv{
+ height: 250px;
+  width: 220px;
+background-color: white;
+border-radius: 5px;
+margin-left: 26px;
+margin-bottom: 0px;
+display: flex;
+ flex-direction: column;
+align-items: center; 
+
+/* margin-top: 22px; */
+    
+
+
+}
+.leaderDiv1{
+  height: 250px;
+   width: 220px;
+ background-color: white;
+ border-radius: 5px;
+ margin-left: 26px;
+ margin-bottom: 0px;
+ display: flex;
   flex-direction: column;
-  align-items: center;
+ align-items: center; 
+ 
+ margin-top: 40px;
+     
+ 
+ 
+ }
+.leaderDiv img{
+
+margin-top: 30px;
+
+
+}
+.leaderDiv h3{
+
+  text-align: center;
+  font-size: 25px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  color: rgb(0, 179, 155);
+  margin-bottom: 0px;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  .leaderDiv p{
+
+    text-align: center;   
+    justify-content: center;
+    color: #847489;
+    font-size: 15px;
+    }
+    .leaderDiv1 img{
+
+      margin-top: 30px;
+      
+      
+      }
+      .leaderDiv1 h3{
+      
+        text-align: center;
+        font-size: 25px;
+        justify-content: center;
+        color: rgb(0, 179, 155);
+        margin-bottom: 0px;
+        }
+        .leaderDiv1 p{
+      
+          text-align: center;   
+          justify-content: center;
+          color: #847489;
+          font-size: 15px;
+          }
+          .improve{
+            padding-top: 93px;
+            padding-left: 450px;
+            padding-right: 450px;
+            padding-bottom: 93px;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            
+        }
+        .improve h3{
+            font-size: 30px;
+            line-height: 39px;
+            font-weight: 400;
+            color: rgb(70, 160, 113);
+           
+        }
+        .improve p{
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: rgb(116, 138, 188);
+        }
+        .section4{
+          padding-left: 188px;
+          padding-right: 188px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around; 
+           font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          line-height: 30px;
+          color: rgb(116, 116, 116);
+
+        }
+      .divSection4{
+          height: 345px;
+          width: 310px;
+          margin-top: 30px;
+              
+      }
+      .spanButton{
+          margin-top: 15px;
+          margin-left: 20px;
+          margin-right: 20px;
+          display: flex;
+          justify-content: space-between;
+      
+      }
+      
+      .spanButton button{
+          font-size: 10px;
+          color: white;
+          background-color:rgb(61, 131, 223) ;
+          height: 32px;
+          width: 111px;
+          border-radius: 5px;
+      }
+      .divSection4:hover{
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              
+      }
+      .spanButton button:hover{
+        
+          background-color:rgb(22, 98, 198) ;
+        
+      }
+      .footer  {
+        font-family: 'Roboto', sans-serif;
+        text-align:center;
+        font-size:12px;
+        line-height:30px ;
+        color:rgb(171, 171, 171);
+        margin-top:100px;
+    
+    }
+    .footer a{
+        text-decoration: none;
+        color: rgb(82, 166, 255);
+    }
